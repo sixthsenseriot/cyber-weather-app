@@ -132,8 +132,24 @@ p.forecast-temp {
   height: 100%;
 }
 
+.created-by-container {
+  max-width: 600px;
+  padding: 12px 0;
+}
+.created-by {
+  color: white;
+  font-size: 12px;
+}
+a.code-link {
+  color: white;
+}
+a.code-link:hover {
+  color: var(--secondary-color);
+}
+
 @media (max-width: 768px) {
-  .weather-app-container {
+  .weather-app-container,
+  .created-by-container {
     max-width: 550px;
   }
   input[type="text"] {
@@ -158,7 +174,8 @@ p.forecast-temp {
   h1 {
     font-size: 30px;
   }
-  .weather-app-container {
+  .weather-app-container,
+  .created-by-container {
     max-width: 320px;
   }
   input[type="text"] {
@@ -193,7 +210,8 @@ p.forecast-temp {
   h1 {
     font-size: 26px;
   }
-  .weather-app-container {
+  .weather-app-container,
+  .created-by-container {
     max-width: 240px;
   }
   form,
