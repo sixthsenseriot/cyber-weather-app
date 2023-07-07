@@ -37,7 +37,7 @@ h2.city {
   padding: 0;
 }
 
-input {
+input[type="text"] {
   width: 426px;
   background-color: transparent;
   border: 2px solid black;
@@ -45,6 +45,12 @@ input {
 ::placeholder {
   color: black;
   opacity: 0.6;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000000s ease-in-out 0s;
 }
 button {
   background-color: transparent;
