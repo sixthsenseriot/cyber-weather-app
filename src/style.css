@@ -126,7 +126,7 @@ p.forecast-temp {
   padding-top: 8px;
 }
 .col {
-  margin: 0 10px;
+  margin: 0 12px;
 }
 .vert-line {
   border-left: 1px solid var(--primary-color);
@@ -178,6 +178,9 @@ a.code-link:hover {
   }
   .temp-div {
     margin: 0 4px;
+  }
+  .col {
+    margin: 0 10px;
   }
 }
 

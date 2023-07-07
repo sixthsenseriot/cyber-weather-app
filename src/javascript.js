@@ -494,7 +494,6 @@ function handleSubmit(event) {
   let cityInputElement = document.querySelector("#city-input");
   if (cityInputElement.value) {
     search(cityInputElement.value);
-    searchSix(cityInputElement.value);
   } else {
     document.getElementById("city-input").placeholder = `please input a city`;
     const timeOut = setTimeout(revert, 1000);
