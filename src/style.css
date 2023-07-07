@@ -21,4 +21,9 @@ h1 {
   max-width: 600px;
   border: 2px solid var(--secondary-color);
   background-color: var(--primary-color);
+  padding: 0;
+}
+
+.forecast-container {
+  background-color: black;
 }
