@@ -222,14 +222,6 @@ a.code-link:hover {
   .temp-div {
     margin: 0 2px;
   }
-  button[type="submit"] {
-    max-width: 85px;
-    text-align: center;
-  }
-  button[type="button"] {
-    max-width: 40px;
-    text-align: center;
-  }
 }
 
 @media (max-width: 340px) {
