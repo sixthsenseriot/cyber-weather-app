@@ -22,11 +22,12 @@ h1 {
   font-family: var(--changa-font);
   font-size: 50px;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-h2 {
+h2.city {
   font-weight: bold;
+  font-size: 34px;
 }
 
 .weather-app-container {
@@ -45,10 +46,48 @@ input {
   color: black;
   opacity: 0.6;
 }
-
 button {
   background-color: transparent;
   border: 2px solid black;
+}
+
+p.weather-date {
+  font-size: 20px;
+  margin: 0;
+}
+p.weather-description {
+  font-size: 20px;
+}
+
+.main-weather-icon {
+  font-size: 80px;
+  margin-right: 45px;
+}
+h2.main-temp {
+  font-size: 70px;
+}
+.temp-conversion {
+  font-size: 30px;
+  margin-left: 8px;
+  position: relative;
+  bottom: 10px;
+}
+a.fahrenheit-link,
+a.celsius-link {
+  color: black;
+}
+a.fahrenheit-link:hover,
+a.celsius-link:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+.vertical-line {
+  border-left: 1px solid black;
+  height: 100px;
+  margin: 0 45px;
+}
+p.weather-extra {
+  margin: 0;
 }
 
 .forecast-container {
@@ -56,8 +95,13 @@ button {
   color: white;
   padding: 12px 0;
 }
+p.forecast-day {
+  margin: 0;
+  padding-bottom: 8px;
+}
 p.forecast-temp {
   margin: 0;
+  padding-top: 8px;
 }
 .col {
   margin: 0 12px;

@@ -21,7 +21,7 @@
     <h1 class="text-center">WEATHER FORECAST</h1>
     <div class="container weather-app-container">
 
-        <div class="main-weather-container pt-3 px-4">
+        <div class="main-weather-container px-4 py-3">
             <div class="search-container d-flex justify-content-center">
                 <form class="search-bar" id="search-bar">
                     <input type="text" placeholder="Where to?" class="city-input" id="city-input" />
@@ -31,23 +31,24 @@
                 </form>
             </div>
 
-            <h2 class="mt-3">Los Angeles <span><i class="fa-solid fa-location-dot"></i></span></h2>
-            <p><strong>Friday</strong> 05:00:00 AM</p>
-            <p>Clear skies</p>
+            <h2 class="city mt-3">Los Angeles <span><i class="fa-solid fa-location-dot"></i></span></h2>
+            <p class="weather-date"><strong>Friday</strong> 05:00:00 AM</p>
+            <p class="weather-description">Clear skies</p>
 
-            <div class="weather-container d-flex justify-content-center">
-                <div><i class="fa-solid fa-sun"></i></div>
+            <div class="weather-container d-flex justify-content-center align-items-center">
+                <div class="main-weather-icon"><i class="fa-solid fa-sun"></i></div>
                 <div>
-                    <h2>77</h2>
+                    <h2 class="main-temp">77</h2>
                 </div>
                 <div class="temp-conversion">
-                    <a href="#" id="fahrenheit-link">°F</a> | <a href="#" id="celsius-link">°C</a>
+                    <a href="#" class="fahrenheit-link" id="fahrenheit-link">°F</a> | <a href="#" class="celsius-link"
+                        id="celsius-link">°C</a>
                 </div>
                 <div class="vertical-line"></div>
                 <div>
-                    <p>Cloudiness: 00%</p>
-                    <p>Humidity: 00%</p>
-                    <p>Wind: 00mph</p>
+                    <p class="weather-extra">Cloudiness: 00%</p>
+                    <p class="weather-extra">Humidity: 00%</p>
+                    <p class="weather-extra">Wind: 00mph</p>
                 </div>
             </div>
         </div>
@@ -55,32 +56,32 @@
         <div class="container forecast-container d-flex justify-content-center">
             <div class="row">
                 <div class="col forecast-one text-center">
-                    <p>MON</p>
-                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p class="day-one forecast-day">MON</p>
+                    <div class="day-one-icon forecast-icon"><i class="fa-solid fa-sun"></i></div>
                     <p class="day-one-temp forecast-temp">00° | 00°</p>
                 </div>
                 <div class="vert-line"></div>
                 <div class="col forecast-two text-center">
-                    <p>MON</p>
-                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p class="day-two forecast-day">TUE</p>
+                    <div class="day-two-icon forecast-icon"><i class="fa-solid fa-sun"></i></div>
                     <p class="day-two-temp forecast-temp">00° | 00°</p>
                 </div>
                 <div class="vert-line"></div>
                 <div class="col forecast-three text-center">
-                    <p>MON</p>
-                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p class="day-three forecast-day">WED</p>
+                    <div class="day-three-icon forecast-icon"><i class="fa-solid fa-sun"></i></div>
                     <p class="day-three-temp forecast-temp">00° | 00°</p>
                 </div>
                 <div class="vert-line"></div>
                 <div class="col forecast-four text-center">
-                    <p>MON</p>
-                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p class="day-four forecast-day">THU</p>
+                    <div class="day-four-icon forecast-icon"><i class="fa-solid fa-sun"></i></div>
                     <p class="day-four-temp forecast-temp">00° | 00°</p>
                 </div>
                 <div class="vert-line"></div>
                 <div class="col forecast-five text-center">
-                    <p>MON</p>
-                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p class="day-five forecast-day">FRI</p>
+                    <div class="day-five-icon forecast-icon"><i class="fa-solid fa-sun"></i></div>
                     <p class="day-five-temp forecast-temp">00° | 00°</p>
                 </div>
             </div>
