@@ -39,6 +39,7 @@ h2.city {
 
 input[type="text"] {
   width: 426px;
+  outline: none;
   background-color: transparent;
   border: 2px solid black;
 }
@@ -55,6 +56,9 @@ input:-webkit-autofill:active {
 button {
   background-color: transparent;
   border: 2px solid black;
+}
+button:focus {
+  outline: none;
 }
 
 p.weather-date {
