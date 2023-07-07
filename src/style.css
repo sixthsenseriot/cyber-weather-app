@@ -224,9 +224,11 @@ a.code-link:hover {
   }
   button[type="submit"] {
     max-width: 85px;
+    text-align: center;
   }
   button[type="button"] {
     max-width: 40px;
+    text-align: center;
   }
 }
 
