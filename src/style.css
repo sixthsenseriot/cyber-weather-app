@@ -65,6 +65,7 @@ button {
     right;
   background-size: 200%;
   transition: 200ms ease-out;
+  color: black;
 }
 button:hover {
   background-position: left;
@@ -220,6 +221,9 @@ a.code-link:hover {
   }
   .temp-div {
     margin: 0 2px;
+  }
+  button {
+    max-width: auto;
   }
 }
 
