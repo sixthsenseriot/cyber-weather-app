@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #fcee0a;
+  --secondary-color: #00f0ff;
+}
+
+body {
+  background-color: black;
+  background-size: 80px 80px;
+  background-image: radial-gradient(
+    circle,
+    var(--primary-color) 1px,
+    rgba(0, 0, 0, 0) 1px
+  );
+}
