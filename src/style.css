@@ -1,6 +1,8 @@
 :root {
   --primary-color: #ffdb1f;
   --secondary-color: #04c3ff;
+  --changa-font: "Changa", sans-serif;
+  --monda-font: "Monda", sans-serif;
 }
 
 body {
@@ -11,10 +13,20 @@ body {
     var(--primary-color) 1px,
     rgba(0, 0, 0, 0) 1px
   );
+  font-family: "Monda", sans-serif;
+  color: black;
 }
 
 h1 {
   color: var(--primary-color);
+  font-family: var(--changa-font);
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-weight: bold;
 }
 
 .weather-app-container {
@@ -24,6 +36,33 @@ h1 {
   padding: 0;
 }
 
+input {
+  width: 426px;
+  background-color: transparent;
+  border: 2px solid black;
+}
+::placeholder {
+  color: black;
+  opacity: 0.6;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid black;
+}
+
 .forecast-container {
   background-color: black;
+  color: white;
+  padding: 12px 0;
+}
+p.forecast-temp {
+  margin: 0;
+}
+.col {
+  margin: 0 12px;
+}
+.vert-line {
+  border-left: 1px solid var(--primary-color);
+  height: 100%;
 }
