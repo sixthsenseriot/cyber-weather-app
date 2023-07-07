@@ -56,6 +56,17 @@ input:-webkit-autofill:active {
 button {
   background-color: transparent;
   border: 2px solid black;
+  background: linear-gradient(
+      to left,
+      transparent 50%,
+      var(--secondary-color) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 200ms ease-out;
+}
+button:hover {
+  background-position: left;
 }
 button:focus {
   outline: none;
