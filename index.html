@@ -14,20 +14,71 @@
 </head>
 
 <body>
-    <div class="container">
+    <h1 class="text-center my-5">WEATHER FORECAST</h1>
+    <div class="container weather-app-container p-3">
 
-        <h1 class="text-center">WEATHER FORECAST</h1>
         <div class="search-container d-flex justify-content-center">
             <form class="search-bar" id="search-bar">
                 <input type="text" placeholder="SEARCH FOR A CITY" class="city-input" id="city-input" />
                 <button type="submit">SEARCH</button>
-                <button type="button" id="location-button"><i
+                <button type="button" class="location-button" id="location-button"><i
                         class="fa-solid fa-location-crosshairs location-button"></i></button>
             </form>
         </div>
 
-        <h2>Los Angeles <span><i class="fa-solid fa-map-pin"></i></span></h2>
-        <h3><strong>Friday</strong> 05:00:00 AM</h3>
+        <h2 class="mt-2">Los Angeles <span><i class="fa-solid fa-map-pin"></i></span></h2>
+        <p><strong>Friday</strong> 05:00:00 AM</p>
+        <p>Clear skies</p>
+
+        <div class="weather-container d-flex justify-content-center">
+            <div><i class="fa-solid fa-sun"></i></div>
+            <div>
+                <h2>77</h2>
+            </div>
+            <div class="temp-conversion">
+                <a href="#" id="fahrenheit-link">°F</a> | <a href="#" id="celsius-link">°C</a>
+            </div>
+            <div class="vertical-line"></div>
+            <div>
+                <p>Cloudiness: 00%</p>
+                <p>Humidity: 00%</p>
+                <p>Wind: 00mph</p>
+            </div>
+        </div>
+
+        <div class="container forecast-container d-flex justify-content-center">
+            <div class="row">
+                <div class="col forecast-one text-center">
+                    <p>MON</p>
+                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p>00° | 00°</p>
+                </div>
+                <div class="vert-line"></div>
+                <div class="col forecast-two text-center">
+                    <p>MON</p>
+                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p>00° | 00°</p>
+                </div>
+                <div class="vert-line"></div>
+                <div class="col forecast-three text-center">
+                    <p>MON</p>
+                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p>00° | 00°</p>
+                </div>
+                <div class="vert-line"></div>
+                <div class="col forecast-four text-center">
+                    <p>MON</p>
+                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p>00° | 00°</p>
+                </div>
+                <div class="vert-line"></div>
+                <div class="col forecast-five text-center">
+                    <p>MON</p>
+                    <div><i class="fa-solid fa-sun"></i></div>
+                    <p>00° | 00°</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 

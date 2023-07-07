@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #fcee0a;
-  --secondary-color: #00f0ff;
+  --primary-color: #ffdb1f;
+  --secondary-color: #04c3ff;
 }
 
 body {
@@ -11,4 +11,14 @@ body {
     var(--primary-color) 1px,
     rgba(0, 0, 0, 0) 1px
   );
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.weather-app-container {
+  max-width: 600px;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
 }
