@@ -31,14 +31,14 @@ h2.city {
 }
 
 .weather-app-container {
-  max-width: 600px;
+  max-width: 620px;
   border: 2px solid var(--secondary-color);
   background-color: var(--primary-color);
   padding: 0;
 }
 
 input[type="text"] {
-  width: 426px;
+  width: 446px;
   outline: none;
   background-color: transparent;
   border: 2px solid black;
