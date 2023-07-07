@@ -80,11 +80,6 @@ p.weather-description {
   font-size: 20px;
 }
 
-.weather-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .main-weather-icon {
   font-size: 80px;
   margin-right: 45px;
