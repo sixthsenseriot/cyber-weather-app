@@ -65,27 +65,27 @@ function displayForecast(response) {
   forecastFiveDay = response.data.daily[5].temp.day;
   forecastFiveNight = response.data.daily[5].temp.night;
 
-  let forecastOne = document.querySelector("#day-one-temp");
-  let forecastTwo = document.querySelector("#day-two-temp");
-  let forecastThree = document.querySelector("#day-three-temp");
-  let forecastFour = document.querySelector("#day-four-temp");
-  let forecastFive = document.querySelector("#day-five-temp");
+  let foreOneDay = document.querySelector("#temp-one-day");
+  let foreOneNight = document.querySelector("#temp-one-night");
+  let foreTwoDay = document.querySelector("#temp-two-day");
+  let foreTwoNight = document.querySelector("#temp-two-night");
+  let foreThreeDay = document.querySelector("#temp-three-day");
+  let foreThreeNight = document.querySelector("#temp-three-night");
+  let foreFourDay = document.querySelector("#temp-four-day");
+  let foreFourNight = document.querySelector("#temp-four-night");
+  let foreFiveDay = document.querySelector("#temp-five-day");
+  let foreFiveNight = document.querySelector("#temp-five-night");
 
-  forecastOne.innerHTML = `${Math.round(forecastOneDay)}° | ${Math.round(
-    forecastOneNight
-  )}°`;
-  forecastTwo.innerHTML = `${Math.round(forecastTwoDay)}° | ${Math.round(
-    forecastTwoNight
-  )}°`;
-  forecastThree.innerHTML = `${Math.round(forecastThreeDay)}° | ${Math.round(
-    forecastThreeNight
-  )}°`;
-  forecastFour.innerHTML = `${Math.round(forecastFourDay)}° | ${Math.round(
-    forecastFourNight
-  )}°`;
-  forecastFive.innerHTML = `${Math.round(forecastFiveDay)}° | ${Math.round(
-    forecastFiveNight
-  )}°`;
+  foreOneDay.innerHTML = `${Math.round(forecastOneDay)}°`;
+  foreOneNight.innerHTML = `${Math.round(forecastOneNight)}°`;
+  foreTwoDay.innerHTML = `${Math.round(forecastTwoDay)}°`;
+  foreTwoNight.innerHTML = `${Math.round(forecastTwoNight)}°`;
+  foreThreeDay.innerHTML = `${Math.round(forecastThreeDay)}°`;
+  foreThreeNight.innerHTML = `${Math.round(forecastThreeNight)}°`;
+  foreFourDay.innerHTML = `${Math.round(forecastFourDay)}°`;
+  foreFourNight.innerHTML = `${Math.round(forecastFourNight)}°`;
+  foreFiveDay.innerHTML = `${Math.round(forecastFiveDay)}°`;
+  foreFiveNight.innerHTML = `${Math.round(forecastFiveNight)}°`;
 
   // change icon based on weather
   let oneIcon = document.querySelector("#day-one-icon");
@@ -494,6 +494,7 @@ function handleSubmit(event) {
   let cityInputElement = document.querySelector("#city-input");
   if (cityInputElement.value) {
     search(cityInputElement.value);
+    searchSix(cityInputElement.value);
   } else {
     document.getElementById("city-input").placeholder = `please input a city`;
     const timeOut = setTimeout(revert, 1000);
@@ -525,11 +526,16 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
   // convert 5 day forecast to celsius
-  let dayOneTemp = document.querySelector("#day-one-temp");
-  let dayTwoTemp = document.querySelector("#day-two-temp");
-  let dayThreeTemp = document.querySelector("#day-three-temp");
-  let dayFourTemp = document.querySelector("#day-four-temp");
-  let dayFiveTemp = document.querySelector("#day-five-temp");
+  let foreOneDay = document.querySelector("#temp-one-day");
+  let foreOneNight = document.querySelector("#temp-one-night");
+  let foreTwoDay = document.querySelector("#temp-two-day");
+  let foreTwoNight = document.querySelector("#temp-two-night");
+  let foreThreeDay = document.querySelector("#temp-three-day");
+  let foreThreeNight = document.querySelector("#temp-three-night");
+  let foreFourDay = document.querySelector("#temp-four-day");
+  let foreFourNight = document.querySelector("#temp-four-night");
+  let foreFiveDay = document.querySelector("#temp-five-day");
+  let foreFiveNight = document.querySelector("#temp-five-night");
 
   let celOneA = (forecastOneDay - 32) * (5 / 9);
   let celOneB = (forecastOneDay - 32) * (5 / 9);
@@ -546,13 +552,16 @@ function displayCelsiusTemperature(event) {
   let celFiveA = (forecastFiveDay - 32) * (5 / 9);
   let celFiveB = (forecastFiveDay - 32) * (5 / 9);
 
-  dayOneTemp.innerHTML = `${Math.round(celOneA)}° | ${Math.round(celOneB)}°`;
-  dayTwoTemp.innerHTML = `${Math.round(celTwoA)}° | ${Math.round(celTwoB)}°`;
-  dayThreeTemp.innerHTML = `${Math.round(celThreeA)}° | ${Math.round(
-    celThreeB
-  )}°`;
-  dayFourTemp.innerHTML = `${Math.round(celFourA)}° | ${Math.round(celFourB)}°`;
-  dayFiveTemp.innerHTML = `${Math.round(celFiveA)}° | ${Math.round(celFiveB)}°`;
+  foreOneDay.innerHTML = `${Math.round(celOneA)}°`;
+  foreOneNight.innerHTML = `${Math.round(celOneB)}°`;
+  foreTwoDay.innerHTML = `${Math.round(celTwoA)}°`;
+  foreTwoNight.innerHTML = `${Math.round(celTwoB)}°`;
+  foreThreeDay.innerHTML = `${Math.round(celThreeA)}°`;
+  foreThreeNight.innerHTML = `${Math.round(celThreeB)}°`;
+  foreFourDay.innerHTML = `${Math.round(celFourA)}°`;
+  foreFourNight.innerHTML = `${Math.round(celFourB)}°`;
+  foreFiveDay.innerHTML = `${Math.round(celFiveA)}°`;
+  foreFiveNight.innerHTML = `${Math.round(celFiveB)}°`;
 }
 // display fahrenheit temperature
 function displayFahrenheitTemperature(event) {
@@ -561,27 +570,27 @@ function displayFahrenheitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 
   // convert 6 day forecast to fahrenheit
-  let dayOneTemp = document.querySelector("#day-one-temp");
-  let dayTwoTemp = document.querySelector("#day-two-temp");
-  let dayThreeTemp = document.querySelector("#day-three-temp");
-  let dayFourTemp = document.querySelector("#day-four-temp");
-  let dayFiveTemp = document.querySelector("#day-five-temp");
+  let foreOneDay = document.querySelector("#temp-one-day");
+  let foreOneNight = document.querySelector("#temp-one-night");
+  let foreTwoDay = document.querySelector("#temp-two-day");
+  let foreTwoNight = document.querySelector("#temp-two-night");
+  let foreThreeDay = document.querySelector("#temp-three-day");
+  let foreThreeNight = document.querySelector("#temp-three-night");
+  let foreFourDay = document.querySelector("#temp-four-day");
+  let foreFourNight = document.querySelector("#temp-four-night");
+  let foreFiveDay = document.querySelector("#temp-five-day");
+  let foreFiveNight = document.querySelector("#temp-five-night");
 
-  dayOneTemp.innerHTML = `${Math.round(forecastOneDay)}° | ${Math.round(
-    forecastOneNight
-  )}°`;
-  dayTwoTemp.innerHTML = `${Math.round(forecastTwoDay)}° | ${Math.round(
-    forecastTwoNight
-  )}°`;
-  dayThreeTemp.innerHTML = `${Math.round(forecastThreeDay)}° | ${Math.round(
-    forecastThreeNight
-  )}°`;
-  dayFourTemp.innerHTML = `${Math.round(forecastFourDay)}° | ${Math.round(
-    forecastFourNight
-  )}°`;
-  dayFiveTemp.innerHTML = `${Math.round(forecastFiveDay)}° | ${Math.round(
-    forecastFiveNight
-  )}°`;
+  foreOneDay.innerHTML = `${Math.round(forecastOneDay)}°`;
+  foreOneNight.innerHTML = `${Math.round(forecastOneNight)}°`;
+  foreTwoDay.innerHTML = `${Math.round(forecastTwoDay)}°`;
+  foreTwoNight.innerHTML = `${Math.round(forecastTwoNight)}°`;
+  foreThreeDay.innerHTML = `${Math.round(forecastThreeDay)}°`;
+  foreThreeNight.innerHTML = `${Math.round(forecastThreeNight)}°`;
+  foreFourDay.innerHTML = `${Math.round(forecastFourDay)}°`;
+  foreFourNight.innerHTML = `${Math.round(forecastFourNight)}°`;
+  foreFiveDay.innerHTML = `${Math.round(forecastFiveDay)}°`;
+  foreFiveNight.innerHTML = `${Math.round(forecastFiveNight)}°`;
 }
 
 let fahrenheitTemperature = null;

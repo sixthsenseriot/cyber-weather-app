@@ -31,14 +31,14 @@ h2.city {
 }
 
 .weather-app-container {
-  max-width: 620px;
+  max-width: 680px;
   border: 2px solid var(--secondary-color);
   background-color: var(--primary-color);
   padding: 0;
 }
 
 input[type="text"] {
-  width: 446px;
+  width: 506px;
   outline: none;
   background-color: transparent;
   border: 2px solid black;
@@ -83,7 +83,7 @@ p.weather-description {
 
 .main-weather-icon {
   font-size: 80px;
-  margin-right: 45px;
+  margin-right: 55px;
 }
 h2.main-temp {
   font-size: 70px;
@@ -106,7 +106,7 @@ a.celsius-link:hover {
 .vertical-line {
   border-left: 1px solid black;
   height: 100px;
-  margin: 0 45px;
+  margin: 0 55px;
 }
 p.weather-extra {
   margin: 0;
@@ -126,15 +126,18 @@ p.forecast-temp {
   padding-top: 8px;
 }
 .col {
-  margin: 0 12px;
+  margin: 0 10px;
 }
 .vert-line {
   border-left: 1px solid var(--primary-color);
   height: 100%;
 }
+.temp-div {
+  margin: 0 6px;
+}
 
 .created-by-container {
-  max-width: 600px;
+  max-width: 680px;
   padding: 12px 0;
 }
 .created-by {
@@ -158,6 +161,10 @@ a.code-link:hover {
   }
   .main-weather-icon {
     font-size: 70px;
+    margin-right: 50px;
+  }
+  .vertical-line {
+    margin: 0 50px;
   }
   h2.main-temp {
     font-size: 60px;
@@ -168,6 +175,9 @@ a.code-link:hover {
   .forecast-day,
   .forecast-temp {
     font-size: 14px;
+  }
+  .temp-div {
+    margin: 0 4px;
   }
 }
 
@@ -204,6 +214,9 @@ a.code-link:hover {
   .forecast-day,
   .forecast-temp {
     font-size: 8px;
+  }
+  .temp-div {
+    margin: 0 2px;
   }
 }
 
