@@ -128,9 +128,11 @@ p.forecast-day {
 p.forecast-temp {
   margin: 0;
   padding-top: 8px;
+  display: flex;
+  justify-content: center;
 }
 .col {
-  margin: 0 12px;
+  margin: 0 10px;
 }
 .vert-line {
   border-left: 1px solid var(--primary-color);
