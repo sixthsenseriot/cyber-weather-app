@@ -72,6 +72,7 @@ button {
 }
 button:hover {
   background-position: left;
+  cursor: pointer;
 }
 button:focus {
   outline: none;
@@ -131,12 +132,18 @@ p.forecast-temp {
   display: flex;
   justify-content: center;
 }
-.col {
-  margin: 0 10px;
+.line-container,
+.forecast-col {
+  margin: 0;
+}
+.forecast-col {
+  width: 98px;
 }
 .vert-line {
-  border-left: 1px solid var(--primary-color);
+  width: 1px;
+  background-color: var(--primary-color);
   height: 100%;
+  position: absolute;
 }
 .temp-div {
   margin: 0 6px;
@@ -167,16 +174,19 @@ a.code-link:hover {
   }
   .main-weather-icon {
     font-size: 70px;
-    margin-right: 50px;
+    margin-right: 40px;
   }
   .vertical-line {
-    margin: 0 50px;
+    margin: 0 40px;
   }
   h2.main-temp {
     font-size: 60px;
   }
   .temp-conversion {
     font-size: 26px;
+  }
+  .weather-extra {
+    font-size: 16px;
   }
   .forecast-day,
   .forecast-temp {
@@ -185,8 +195,8 @@ a.code-link:hover {
   .temp-div {
     margin: 0 4px;
   }
-  .col {
-    margin: 0 10px;
+  .forecast-col {
+    width: 80px;
   }
 }
 
@@ -209,7 +219,8 @@ a.code-link:hover {
     font-size: 16px;
   }
   .main-weather-icon {
-    margin-right: 30px;
+    margin-right: 28px;
+    font-size: 50px;
   }
   .vertical-line {
     display: none;
@@ -217,15 +228,21 @@ a.code-link:hover {
   .weather-extra {
     display: none;
   }
-  .col {
-    margin: 0;
-  }
   .forecast-day,
   .forecast-temp {
     font-size: 8px;
   }
   .temp-div {
     margin: 0 2px;
+  }
+  div.hide-line {
+    display: none;
+  }
+  div.forecast-five {
+    display: none;
+  }
+  .forecast-col {
+    width: 50px;
   }
 }
 
@@ -243,6 +260,10 @@ a.code-link:hover {
   .weather-description {
     text-align: center;
   }
+  p.weather-date,
+  .weather-description {
+    font-size: 15px;
+  }
   form {
     display: block;
   }
@@ -251,19 +272,24 @@ a.code-link:hover {
     margin-bottom: 10px;
   }
   .main-weather-icon {
-    font-size: 60px;
+    font-size: 40px;
     margin-right: 22px;
   }
   h2.main-temp {
     font-size: 40px;
   }
   .temp-conversion {
-    font-size: 16px;
+    font-size: 20px;
   }
-  .forecast-five {
+  .forecast-five,
+  .forecast-four {
     display: none;
   }
-  .hide-line {
+  .hide-line,
+  .hide-line-small {
     display: none;
+  }
+  .forecast-col {
+    width: 45px;
   }
 }
