@@ -414,7 +414,7 @@ function displayWeather(response) {
     weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
 
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  cityElement.innerHTML = response.data.name;
+  cityElement.innerHTML = `${response.data.name} <span><i class="fa-solid fa-location-dot"></i></span>`;
   statusElement.innerHTML = weatherStatus;
   cloudElement.innerHTML = `Cloudiness: ${response.data.clouds.all}%`;
   humidityElement.innerHTML = `Humidity: ${response.data.main.humidity}%`;
