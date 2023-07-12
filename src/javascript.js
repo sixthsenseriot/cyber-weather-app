@@ -561,6 +561,9 @@ function displayCelsiusTemperature(event) {
   foreFourNight.innerHTML = `${Math.round(celFourB)}°`;
   foreFiveDay.innerHTML = `${Math.round(celFiveA)}°`;
   foreFiveNight.innerHTML = `${Math.round(celFiveB)}°`;
+
+  fahrenheitLink.style.fontWeight = "normal";
+  celsiusLink.style.fontWeight = "bold";
 }
 // display fahrenheit temperature
 function displayFahrenheitTemperature(event) {
@@ -590,6 +593,9 @@ function displayFahrenheitTemperature(event) {
   foreFourNight.innerHTML = `${Math.round(forecastFourNight)}°`;
   foreFiveDay.innerHTML = `${Math.round(forecastFiveDay)}°`;
   foreFiveNight.innerHTML = `${Math.round(forecastFiveNight)}°`;
+
+  fahrenheitLink.style.fontWeight = "bold";
+  celsiusLink.style.fontWeight = "normal";
 }
 
 let fahrenheitTemperature = null;
@@ -613,6 +619,7 @@ locationButton.addEventListener("click", getLocation);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+fahrenheitLink.style.fontWeight = "bold";
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
